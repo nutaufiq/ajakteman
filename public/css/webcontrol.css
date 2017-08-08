@@ -1,0 +1,88 @@
+@font-face {
+  font-family:'futurabold';
+  src: url('../fonts/futurabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family:'futuraboldbt';
+  src: url('../fonts/futuraboldbt.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family:'futurabook';
+  src: url('../fonts/futurabook.ttf') format('truetype');
+  font-style: normal;
+  font-stretch: normal;
+}
+
+html, body { width: 100%; height: 100%; font-family:'futurabook',Arial; }
+
+strong, b { font-family:'futuraboldbt',Arial;  }
+
+.half-full { align-items: center; display: flex; height: 100vh; justify-content: center; }
+#col-img { background-color: #000; background-color: #00b453; background-size: cover; color: #ffffff; }
+#col-form { background-color: #fff;  }
+#form-login-container { width: 320px; }
+
+#header { width: 100%;  background-color: #333333; color: #ffffff; }
+#content { padding-bottom: 60px; padding-right: 20px; padding-left: 20px;}
+#footer { position: fixed; bottom: 0px; background-color: #333333; color: #ffffff; width: 100%; padding: 5px 0px; font-size: 12px; z-index: 999; }
+
+.topbar-text { float: left; margin: 5px 5px; }
+.topbar-nav { float: right; margin: 0px -15px 0px 0px; padding: 0px;  }
+.topbar-nav > li { float: left; display: block; position: relative; list-style: outside none none; }
+.topbar-nav > li { font-size: 12px; }
+.topbar-nav > li > a { padding: 5px 10px; display: block; }
+.topbar-nav > li > a:focus, .topbar-nav > li > a:hover { background-color: #555555; text-decoration: none; }
+.topbar-nav > li > a > i { color: #ffffff; }
+.topbar-nav::after { clear: both; }
+
+.page-title { border-left: 5px solid #00b453; padding-bottom: 12px; padding-left: 12px; padding-top: 13px; margin-bottom: 20px; margin-top: 0px; background-color: #f2f2f2; position: relative; font-size: 15px; font-family:'futuraboldbt',Arial; color: #333333; }
+.page-title > .btn-add { position: absolute; right: 10px; top: 10px; }
+.page-title > .btn-back { position: absolute; right: 10px; top: 10px; }
+
+.box { border-left: 5px solid #00b453; }
+
+.nopadding { padding: 0px; }
+.nomargin { margin: 0px; }
+
+/*BOOTSTRAP*/
+.form-control { border-radius: 0px; }
+.btn { border-radius: 0px; }
+.navbar { border-radius: 0px; }
+.navbar-default { border: none; background-color: #00b453; }
+.navbar-default .navbar-nav > li > a { color: #ccefdb; }
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover { color: #ffffff; }
+.navbar-default .navbar-brand { color: #ccefdb; }
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover { background-color: #cdf0dc; }
+.navbar-toggle { border-radius: 0px; border: none; padding: 10px 10px; }
+.navbar-default .navbar-toggle .icon-bar { background-color: #ccefdb; }
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover { background-color: transparent; }
+.navbar-default .navbar-collapse, .navbar-default .navbar-form { border: none; }
+.navbar-nav .open .dropdown-menu { background-color: #00b453; color: #ffffff; border: none; border-radius: 0px; }
+.dropdown-menu > li > a { color: #cdf0dc; }
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover { background-color: ##; color: #555555; }
+.dropdown-menu .divider { background-color: #cdf0dc; }
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover { color: #ffffff; }
+
+@media (max-width:767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a { color: #cdf0dc; }
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover { color: #ffffff; }
+	.box { border-left: 0px; }
+}
+
+@media (max-width:992px) {
+	.box { border-left: 0px; }
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span { border-radius: 0px; }
+.pagination > li:last-child > a, .pagination > li:last-child > span { border-radius: 0px; }
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover { background-color: #555555; border-color: #555555; }
+.pagination > li > a, .pagination > li > span { color: #555555; }
+.pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover { color: #555555; }
+/*BOOTSTRAP*/
